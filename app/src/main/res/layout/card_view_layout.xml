@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="100">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/futsal_main_image"
+                android:scaleType="fitXY"
+                android:layout_weight="60"
+                android:src="@drawable/images"/>
+            <RelativeLayout
+                android:layout_weight="40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Champions Futsal"
+                    android:gravity="start"
+                    android:textSize="25sp"
+                    android:textColor="@color/textColorPrimary"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/futsal_name"
+                    android:typeface="normal" />
+                <TextView
+                    android:id="@+id/futsal_address"
+                    android:text="Imadol, Lalitpur"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/futsal_name"/>
+                <RatingBar
+                    android:id="@+id/futsal_rating"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:paddingTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/futsal_address"
+                    android:isIndicator="true"
+                    android:numStars="6"
+                    android:stepSize="0.1"
+                    android:longClickable="false" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
